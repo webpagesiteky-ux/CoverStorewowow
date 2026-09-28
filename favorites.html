@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>お気に入り | Cover Store</title>
+
+    <meta
+        name="description"
+        content="Cover Storeのお気に入り"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+
+        <a href="index.html">
+            Cover Store
+        </a>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html#new">
+            新着
+        </a>
+
+<a href="favorites.html">
+    お気に入り
+</a>
+
+        <a href="index.html#featured">
+            特集
+        </a>
+
+        <a href="index.html#about">
+            About
+        </a>
+
+
+
+<form
+    class="search-box"
+    action="search.html"
+    method="get"
+>
+
+    <input
+        type="text"
+        id="search-input"
+        name="keyword"
+        placeholder="雑誌を検索..."
+        autocomplete="off"
+    >
+
+    <button
+        id="search-button"
+        type="submit"
+    >
+
+        <img
+            src="images/虫眼鏡.png"
+            alt="検索"
+        >
+
+    </button>
+
+</form>
+
+
+
+
+    </nav>
+
+</header>
+
+
+
+<main class="favorites-page">
+
+    <section class="favorites-section">
+
+ <span class="mini-title">
+    Favorites
+</span>
+
+
+<h1>
+    お気に入り
+</h1>
+
+
+<p class="favorites-description">
+    お気に入りに追加した雑誌を確認できます。
+</p>
+
+
+<p class="search-count">
+
+    お気に入り
+    <span id="favorite-count">0</span>
+    件
+
+</p>
+
+        <div
+            class="products"
+            id="favorite-products"
+        >
+
+            <!-- JavaScriptで商品を表示します -->
+
+        </div>
+
+
+        <p
+            id="favorites-empty"
+            class="favorites-empty"
+        >
+            お気に入りに追加した雑誌はありません。
+        </p>
+
+    </section>
+
+</main>
+
+
+
+<footer>
+
+    <div class="footer-logo">
+        Cover Store
+    </div>
+
+    <p>
+        © 2026 Cover Store.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+<script src="favorites.js"></script>
+
+</body>
+
+</html>

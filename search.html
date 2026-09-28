@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>検索結果 | Cover Store</title>
+
+    <meta
+        name="description"
+        content="Cover Storeの検索結果"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <a href="index.html">
+            Cover Store
+        </a>
+    </div>
+
+    <nav>
+
+        <a href="index.html#new">新着</a>
+
+        <a href="index.html#featured">特集</a>
+
+        <a href="index.html#about">About</a>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="雑誌を検索..."
+                autocomplete="off"
+            >
+
+<button id="search-button" type="button">
+
+    <img
+        src="images/虫眼鏡.png"
+        alt="検索"
+    >
+
+</button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main class="search-results-page">
+
+    <section class="search-results">
+
+        <span class="mini-title">
+            検索結果
+        </span>
+
+        <h1>
+            検索結果
+        </h1>
+
+<p class="search-keyword">
+
+    「<span id="search-keyword"></span>」
+    の検索結果
+
+</p>
+
+<p class="search-count">
+
+    検索結果
+    <span id="search-count">0</span>
+    件
+
+</p>
+
+<div class="search-sort">
+
+    <label for="sort-select">
+        並び替え
+    </label>
+
+    <select id="sort-select">
+
+        <option value="recommended">
+            おすすめ順
+        </option>
+
+        <option value="price-low">
+            価格が安い順
+        </option>
+
+        <option value="price-high">
+            価格が高い順
+        </option>
+
+        <option value="rating-high">
+            評価が高い順
+        </option>
+
+    </select>
+
+</div>
+
+        <div
+            class="products"
+            id="search-products"
+        >
+
+            <a
+                href="endfield.html"
+                class="card"
+                data-name="ENDFIELD"
+                data-keywords="endfield エンドフィールド 近未来 ビジュアル 創作"
+            >
+
+<div class="card-image">
+
+    <img
+        src="images/endfield.png"
+        alt="ENDFIELD"
+    >
+
+    <button
+        class="favorite-btn"
+        type="button"
+        aria-label="ENDFIELDをお気に入りに追加"
+        data-product="ENDFIELD"
+    >
+        <img
+            src="images/中抜きハート.png"
+            alt=""
+        >
+    </button>
+
+</div>
+
+                <h3>
+                    ENDFIELD
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>4.3</span>
+                </div>
+
+                <p class="price">
+                    ¥980（税込）
+                </p>
+
+                <button type="button">
+                    詳細を見る
+                </button>
+
+            </a>
+
+
+            <a
+                href="marthe.html"
+                class="card"
+                data-name="MARTHE"
+                data-keywords="marthe マルテ 幻想 ビジュアル"
+            >
+
+                <div class="card-image">
+
+    <img
+        src="images/marthe.png"
+        alt="MARTHE"
+    >
+
+    <button
+        class="favorite-btn"
+        type="button"
+        aria-label="MARTHEをお気に入りに追加"
+        data-product="MARTHE"
+    >
+        <img
+            src="images/中抜きハート.png"
+            alt=""
+        >
+    </button>
+
+</div>
+
+                <h3>
+                    MARTHE
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>4.5</span>
+                </div>
+
+                <p class="price">
+                    ¥1120（税込）
+                </p>
+
+                <button type="button">
+                    詳細を見る
+                </button>
+
+            </a>
+
+
+            <a
+                href="wuling.html"
+                class="card"
+                data-name="WULING"
+                data-keywords="wuling ウーリン 未来 近未来 アート"
+            >
+
+<div class="card-image">
+
+    <img
+        src="images/wuling.png"
+        alt="WULING"
+    >
+
+    <button
+        class="favorite-btn"
+        type="button"
+        aria-label="WULINGをお気に入りに追加"
+        data-product="WULING"
+    >
+        <img
+            src="images/中抜きハート.png"
+            alt=""
+        >
+    </button>
+
+</div>
+
+                <h3>
+                    WULING
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>4.8</span>
+                </div>
+
+                <p class="price">
+                    ¥1070（税込）
+                </p>
+
+                <button type="button">
+                    詳細を見る
+                </button>
+
+            </a>
+
+
+<a
+    href="retry.html"
+    class="card"
+    data-name="RETRY"
+    data-keywords="retry リトライ ストリート 自由 技術者 ファッション 女性向け 女性 ファッション雑誌 MARTHE マルテ リメイク Original Magazine"
+>
+
+    <div class="card-image">
+
+        <img
+            src="images/retry.png"
+            alt="RETRY"
+        >
+
+        <button
+            class="favorite-btn"
+            type="button"
+            aria-label="RETRYをお気に入りに追加"
+            data-product="RETRY"
+        >
+
+            <img
+                src="images/中抜きハート.png"
+                alt=""
+            >
+
+        </button>
+
+    </div>
+
+
+    <h3>
+        RETRY
+    </h3>
+
+
+    <div class="rating">
+
+        ★★★★★
+
+        <span>4.0</span>
+
+    </div>
+
+
+    <p class="price">
+
+        ¥890（税込）
+
+    </p>
+
+
+    <button type="button">
+
+        詳細を見る
+
+    </button>
+
+</a>
+
+
+        </div>
+
+
+        <p
+            id="no-results"
+            class="no-results"
+        >
+            該当する雑誌が見つかりませんでした。
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        Cover Store
+    </div>
+
+    <p>
+        © 2026 Cover Store.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="search.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Store | オリジナル雑誌オンラインショップ</title>
+
+    <meta name="description" content="オリジナル雑誌を販売するオンラインショップ Cover Store">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+   <div class="logo">
+    Cover Store
+</div>
+
+<div class="mobile-header-actions">
+
+<form class="mobile-search-box" action="search.html" method="get">
+
+    <input
+        type="text"
+        name="keyword"
+        placeholder="雑誌を検索..."
+        autocomplete="off"
+    >
+
+    <button
+        type="button"
+        aria-label="検索を開く"
+        id="mobile-search-open"
+    >
+        <img src="images/虫眼鏡.png" alt="検索">
+    </button>
+
+</form>
+
+    <button
+        class="mobile-menu-button"
+        id="mobile-menu-button"
+        type="button"
+        aria-label="メニューを開く"
+    >
+        ☰
+    </button>
+
+</div>
+
+<nav>
+
+<a href="#new">新着</a>
+
+<a href="favorites.html">
+    お気に入り
+</a>
+
+<a href="#featured">特集</a>
+
+<a href="#about">About</a>
+
+   <form
+    class="search-box"
+    action="search.html"
+    method="get"
+>
+
+    <input
+        type="text"
+        id="search-input"
+        name="keyword"
+        placeholder="雑誌を検索..."
+        autocomplete="off"
+    >
+
+<button id="search-button" type="button">
+
+    <img
+        src="images/虫眼鏡.png"
+        alt="検索"
+    >
+
+</button>
+
+    </form>
+    
+
+
+</nav>
+
+</header>
+
+<!-- ==========================================
+     スマホ用検索画面
+========================================== -->
+
+<div class="mobile-search-overlay" id="mobile-search-overlay">
+
+    <div class="mobile-search-panel">
+
+        <form
+            class="mobile-search-form"
+            action="search.html"
+            method="get"
+        >
+
+            <button
+                class="mobile-search-close"
+                id="mobile-search-close"
+                type="button"
+                aria-label="検索を閉じる"
+            >
+                ×
+            </button>
+
+            <div class="mobile-search-input-wrap">
+
+                <img
+                    src="images/虫眼鏡.png"
+                    alt=""
+                >
+
+                <input
+                    type="text"
+                    name="keyword"
+                    id="mobile-search-input"
+                    placeholder="雑誌を検索..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<section class="hero">
+
+    <div class="hero-slider">
+
+        <!-- ENDFIELD -->
+        <div class="hero-slide active">
+
+            <div class="hero-text">
+
+                <span class="mini-title">
+                    Featured Magazines
+                </span>
+
+                <h1>
+                    創作に、<br>
+                    独創性を。
+                </h1>
+
+                <p>
+                    ENDFIELDは近未来をテーマにした
+                    オリジナルビジュアルマガジンです。
+                </p>
+
+                <a href="endfield.html" class="hero-btn">
+                    詳しく見る →
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+    <button class="slide-arrow prev-slide">
+        &#10094;
+    </button>
+
+    <a href="endfield.html" class="hero-cover-link">
+
+        <img
+            class="hero-cover"
+            src="images/endfield.png"
+            alt="ENDFIELD">
+
+    </a>
+
+    <button class="slide-arrow next-slide">
+        &#10095;
+    </button>
+
+</div>
+
+        </div>
+
+
+
+        <!-- MARTHE -->
+        <div class="hero-slide">
+
+            <div class="hero-text">
+
+                <span class="mini-title">
+                    Featured Magazines
+                </span>
+
+                <h1>
+                    幻想を、<br>
+                    一冊に。
+                </h1>
+
+                <p>
+                    MARTHEの世界観を
+                    美しいビジュアルで表現しました。
+                </p>
+
+                <a href="marthe.html" class="hero-btn">
+                    詳しく見る →
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+    <button class="slide-arrow prev-slide">
+        &#10094;
+    </button>
+
+    <a href="marthe.html" class="hero-cover-link">
+
+        <img
+            class="hero-cover"
+            src="images/marthe.png"
+            alt="MARTHE">
+
+    </a>
+
+    <button class="slide-arrow next-slide">
+        &#10095;
+    </button>
+
+</div>
+
+        </div>
+
+
+
+        <!-- WULING -->
+        <div class="hero-slide">
+
+            <div class="hero-text">
+
+                <span class="mini-title">
+                    Featured Magazines
+                </span>
+
+                <h1>
+                    未来を、<br>
+                    綴る。
+                </h1>
+
+                <p>
+                    WULINGが描く
+                    独自の近未来アート。
+                </p>
+
+                <a href="wuling.html" class="hero-btn">
+                    詳しく見る →
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+    <button class="slide-arrow prev-slide">
+        &#10094;
+    </button>
+
+    <a href="wuling.html" class="hero-cover-link">
+
+        <img
+            class="hero-cover"
+            src="images/wuling.png"
+            alt="WULING">
+
+    </a>
+
+    <button class="slide-arrow next-slide">
+        &#10095;
+    </button>
+
+</div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-navigation">
+
+        <div class="hero-dots">
+
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+        </div>
+
+        <div class="hero-progress">
+
+            <div class="hero-progress-bar"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="new" id="new">
+
+<h2>新着雑誌</h2>
+
+<div class="products">
+
+<a href="endfield.html" class="card">
+
+    <div class="card-image">
+
+        <img
+            class="hero-cover"
+            src="images/endfield.png"
+            alt="ENDFIELD"
+        >
+
+<button
+    class="favorite-btn"
+    type="button"
+    aria-label="ENDFIELDをお気に入りに追加"
+    data-product="ENDFIELD"
+>
+    <img
+        src="images/中抜きハート.png"
+        alt=""
+    >
+</button>
+
+    </div>
+
+    <h3>ENDFIELD</h3>
+
+<div class="rating">
+
+★★★★★
+
+<span>4.3</span>
+
+</div>
+
+<p class="price">
+
+¥980（税込）
+
+</p>
+
+<button>
+
+詳細を見る
+
+</button>
+
+</a>
+
+
+
+<a href="marthe.html" class="card">
+
+    <div class="card-image">
+
+        <img
+            class="hero-cover"
+            src="images/marthe.png"
+            alt="MARTHE"
+        >
+
+<button
+    class="favorite-btn"
+    type="button"
+    aria-label="MARTHEをお気に入りに追加"
+    data-product="MARTHE"
+>
+    <img
+        src="images/中抜きハート.png"
+        alt=""
+    >
+</button>
+
+    </div>
+
+    <h3>MARTHE</h3>
+
+<div class="rating">
+
+★★★★★
+<span>4.5</span>
+
+</div>
+
+<p class="price">
+
+¥1120（税込）
+
+</p>
+
+<button>
+
+詳細を見る
+
+</button>
+
+</a>
+
+
+
+<a href="wuling.html" class="card">
+
+    <div class="card-image">
+
+        <img
+            class="hero-cover"
+            src="images/wuling.png"
+            alt="WULING"
+        >
+
+<button
+    class="favorite-btn"
+    type="button"
+    aria-label="WULINGをお気に入りに追加"
+    data-product="WULING"
+>
+    <img
+        src="images/中抜きハート.png"
+        alt=""
+    >
+</button>
+
+    </div>
+
+    <h3>WULING</h3>
+
+<div class="rating">
+
+★★★★★
+<span>4.8</span>
+
+</div>
+
+<p class="price">
+
+¥1070（税込）
+
+</p>
+
+<button>
+
+詳細を見る
+
+</button>
+
+</a>
+
+
+<!-- RETRY -->
+<div class="new-hidden">
+
+<a href="retry.html" class="card">
+
+    <div class="card-image">
+
+        <img
+            class="hero-cover"
+            src="images/retry.png"
+            alt="RETRY"
+        >
+
+        <button
+            class="favorite-btn"
+            type="button"
+            aria-label="RETRYをお気に入りに追加"
+            data-product="RETRY"
+        >
+            <img
+                src="images/中抜きハート.png"
+                alt=""
+            >
+        </button>
+
+    </div>
+
+    <h3>RETRY</h3>
+
+    <div class="rating">
+
+        ★★★★★
+
+        <span>4.0</span>
+
+    </div>
+
+    <p class="price">
+
+        ¥890（税込）
+
+    </p>
+
+    <button>
+
+        詳細を見る
+
+    </button>
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="new-more">
+
+    <button id="new-more-button">
+
+        もっと見る
+        <span>↓</span>
+
+    </button>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+     リメイク作品
+========================================== -->
+
+<section class="remakes">
+
+    <div class="remakes-header">
+
+        <div>
+            <span class="mini-title">
+                Remake Magazines
+            </span>
+
+            <h2>
+                リメイク作品
+            </h2>
+        </div>
+
+        <p>
+            過去の作品を、新たな視点で。
+        </p>
+
+    </div>
+
+
+    <div class="remake-scroll">
+
+        <!-- RETRY -->
+        <a href="retry.html" class="remake-card">
+
+            <div class="remake-image">
+
+                <img
+                    src="images/retry.png"
+                    alt="RETRY"
+                >
+
+            </div>
+
+            <div class="remake-info">
+
+                <h3>
+                    RETRY
+                </h3>
+
+                <p>
+                    MARTHE Remake
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!--
+        今後リメイク作品を追加するときは
+        この下に同じ形式で追加
+        -->
+
+    </div>
+
+</section>
+
+<section class="featured" id="featured">
+
+    <h2>おすすめ特集</h2>
+
+    <div class="feature-grid">
+
+        <a href="#new" class="feature">
+
+            <div class="feature-text">
+
+                <h3>新着雑誌</h3>
+
+                <p class="feature-en">
+                    NEW MAGAZINES
+                </p>
+
+            </div>
+
+            <span class="feature-arrow">→</span>
+
+        </a>
+
+
+        <div class="feature">
+
+            <div class="feature-text">
+
+                <h3>編集部のおすすめ</h3>
+
+                <p class="feature-en">
+                    EDITOR'S PICKS
+                </p>
+
+            </div>
+
+            <span class="feature-arrow">→</span>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-text">
+
+                <h3>人気の表紙</h3>
+
+                <p class="feature-en">
+                    POPULAR COVERS
+                </p>
+
+            </div>
+
+            <span class="feature-arrow">→</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="about" id="about">
+
+<h2>About Cover Store</h2>
+
+<p>
+
+Cover Storeは、
+個人制作・オリジナル作品を
+もっと気軽に楽しめる場所を目指した
+オンライン書店です。
+
+</p>
+
+</section>
+
+
+
+<footer>
+
+    <div class="footer-logo">
+        Cover Store
+    </div>
+
+    <p>
+        © 2026 Cover Store.
+        All Rights Reserved.
+    </p>
+
+    <div class="fan-notice">
+
+        <p>
+            本サイトは『アークナイツ：エンドフィールド』を題材とした
+            非公式のファンメイド作品です。
+            公式運営とは一切関係ありません。
+        </p>
+
+        <a
+            href="https://endfield.gryphline.com/ja-jp/news/4497"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            『アークナイツ：エンドフィールド』二次創作ガイドラインはこちら →
+        </a>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

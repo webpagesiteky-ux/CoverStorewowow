@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WULING | Cover Store</title>
+
+    <link rel="stylesheet" href="product.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <a href="index.html" class="product-logo">
+        Cover Store
+    </a>
+
+    <div class="product-mobile-actions">
+
+        <button
+            class="product-mobile-search-button"
+            id="product-mobile-search-open"
+            type="button"
+            aria-label="検索を開く"
+        >
+            <img src="images/虫眼鏡.png" alt="検索">
+        </button>
+
+        <button
+            class="product-mobile-menu-button"
+            id="product-mobile-menu-button"
+            type="button"
+            aria-label="メニューを開く"
+        >
+            ☰
+        </button>
+
+    </div>
+
+    <nav class="product-nav">
+
+        <a href="index.html#new">新着</a>
+
+        <a href="favorites.html">お気に入り</a>
+
+        <a href="index.html#featured">特集</a>
+
+        <a href="index.html#about">About</a>
+
+        <form
+            class="product-search-box"
+            action="search.html"
+            method="get"
+        >
+
+            <input
+                type="text"
+                name="keyword"
+                placeholder="雑誌を検索..."
+                autocomplete="off"
+            >
+
+            <button
+                type="submit"
+                aria-label="検索"
+            >
+                <img
+                    src="images/虫眼鏡.png"
+                    alt="検索"
+                >
+            </button>
+
+        </form>
+
+    </nav>
+
+</header>
+
+<!-- スマホ用メニュー -->
+
+<div
+    class="product-mobile-nav"
+    id="product-mobile-nav"
+>
+
+    <a href="index.html#new">新着</a>
+
+    <a href="favorites.html">お気に入り</a>
+
+    <a href="index.html#featured">特集</a>
+
+    <a href="index.html#about">About</a>
+
+</div>
+
+<!-- スマホ用検索 -->
+
+<div
+    class="product-search-overlay"
+    id="product-search-overlay"
+>
+
+    <div class="product-search-panel">
+
+        <form
+            class="product-search-form"
+            action="search.html"
+            method="get"
+        >
+
+            <div class="product-search-input-wrap">
+
+                <img
+                    src="images/虫眼鏡.png"
+                    alt=""
+                >
+
+                <input
+                    type="text"
+                    name="keyword"
+                    placeholder="雑誌を検索..."
+                    autocomplete="off"
+                    id="product-mobile-search-input"
+                >
+
+            </div>
+
+            <button
+                class="product-search-close"
+                id="product-search-close"
+                type="button"
+                aria-label="検索を閉じる"
+            >
+                ×
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<main class="product-container">
+
+<div class="product-image">
+
+    <img
+        class="hero-cover"
+        src="images/wuling.png"
+        alt="WULING"
+    >
+
+    <button
+        class="product-favorite-btn"
+        type="button"
+        aria-label="WULINGをお気に入りに追加"
+        data-product="WULING"
+    >
+        <img
+            src="images/中抜きハート.png"
+            alt=""
+        >
+    </button>
+
+</div>
+
+
+
+<div class="product-info">
+
+<p class="category">
+
+Original Magazine
+
+</p>
+
+<h1>
+
+WULING
+
+</h1>
+
+<div class="rating">
+
+★★★★★
+
+<span>4.8</span>
+
+</div>
+
+<div class="price">
+
+¥980（税込）
+
+</div>
+
+<p class="description">
+
+WULINGは、
+未来的なデザインと印象的なビジュアルを
+コンセプトに制作された
+オリジナルビジュアルマガジンです。
+
+シンプルなレイアウトの中に、
+独自の世界観を詰め込んだ一冊です。
+
+</p>
+
+<button class="buy-button">
+
+購入する
+
+</button>
+
+</div>
+
+</main>
+
+
+
+<section class="information">
+
+<h2>
+
+商品情報
+
+</h2>
+
+<table>
+
+<tr>
+
+<th>商品名</th>
+
+<td>WULING</td>
+
+</tr>
+
+<tr>
+
+<th>価格</th>
+
+<td>980円（税込）</td>
+
+</tr>
+
+<tr>
+
+<th>ジャンル</th>
+
+<td>Original Magazine</td>
+
+</tr>
+
+<tr>
+
+<th>状態</th>
+
+<td>新品</td>
+
+</tr>
+
+<tr>
+
+<th>出版社</th>
+
+<td>Cover Store</td>
+
+</tr>
+
+</table>
+
+</section>
+
+
+
+<section class="recommend">
+
+<h2>
+
+関連する雑誌
+
+</h2>
+
+<div class="recommend-grid">
+
+<a href="endfield.html" class="recommend-card">
+
+<img src="images/endfield.png" alt="ENDFIELD">
+
+<h3>
+
+ENDFIELD
+
+</h3>
+
+</a>
+
+<a href="marthe.html" class="recommend-card">
+
+<img src="images/marthe.png" alt="MARTHE">
+
+<h3>
+
+MARTHE
+
+</h3>
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>
+
+© 2026 Cover Store
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
